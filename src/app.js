@@ -24,6 +24,7 @@ app.post('/', async (req, res) => {
 
         const registered = await user(info).save()
         console.log("Succesfully Saved")
+        res.send("Form Submitted Successfully")
     }
     catch (error) {
         console.log('Error')
